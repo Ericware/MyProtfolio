@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title></title>
+  </head>
+
+  <body>
+    <!-- START HERE -->
+   
+   <nav class="navbar navbar-expand-md navbar-light fixed-top py-4">
+     <div class="container">
+       <a href="#home" class="navbar-brand">
+         <img src="img/w.png" height="50" width="50" alt="" class="">
+         <h3 class="d-inline align-middle">Eric Ware</h3>
+       </a>
+       <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarCollapes">
+         <ul class="navbar-nav ml-auto">
+           <li class="nav-item">
+             <a href="index.html" class="nav-link">Home</a>
+           </li>
+           <li class="nav-item">
+            <a href="index.html"  class="nav-link">Meet Eric</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills-section" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#Projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+
+
+         </ul>
+  
+       </div>
+     </div>
+   </nav> 
+
+  <!----HtmlProjects----->
+  <section id="gallery" class="py-5">
+    <div class="container">
+      <h1 class="text-center">HTML Gallery</h1>
+      <p class="text-center">Click image to Visit</p>
+      <div class="row mb-4">
+        <div class="col-md-4">
+          <a
+            href="/tylerindex.html"
+            data-toggle="lightbox"
+            data-gallery="img-gallery"
+          >
+            <img src="./img/FlowerBoyweb.png" alt="" class="img-fluid" />
+          </a>
+          <p style="text-align:center;"><strong>Stream Tyler The Creator</strong></p>
+        </div>
+        <div class="col-md-4">
+          <a
+            href="."
+            data-toggle="lightbox"
+            data-gallery="img-gallery"
+          >
+            <img src="./img/office.png" alt="" class="img-fluid" />
+          </a>
+          <p style="text-align:center;"><strong>Stream The Office</strong></p>
+        </div>
+        <div class="col-md-4">
+          <a
+            href="/Users/ericware/Downloads/Project midterm/HTML Projects/MidTerm HTML/index.html"
+            data-toggle="lightbox"
+            data-gallery="img-gallery"
+          >
+            <img src="./img/Apple.png" alt="" class="img-fluid" />
+          </a>
+          <p style="text-align:center;"><strong>Apple Store</strong></p>
+        </div>
+        
+       
+      </div>
+    </div>
+  </section>
+
+
+
+<!----Footer---->
+<footer id="main-footer" class="btn-outline-light">
+  <div class="conatiner">
+    <div class="row">
+      <div class="col text-center py-4">
+        <H3>WARE</H3>
+        <p>copyright &copy;<span id="year"></span></p>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#contactModal">Contact Me ;)</button>
+      </div>
+    </div>
+  </div>
+  </footer>
+  
+  <!--Contact Modal-->
+  
+  <div class="modal fade text-dark" id="contactModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title"> Contact Me</h5>
+            <button class="close" data-dismiss="modal"> </button>
+          <span>&times;</span>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <lable for="">Name</lable>
+              <input type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <lable for="">Email</lable>
+              <input type="Email" class="form-control">
+            </div>
+            <div class="form-group">
+              <lable for="">Message</lable>
+              <textarea class="form-control"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary btn-block">Submit</button>
+        </div>
+      </div>
+  </div>
+  </div>
+
+
+
+    <script
+      src="http://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      // Get the current year for the copyright
+      $('#year').text(new Date().getFullYear())
+    </script>
+  </body>
+</html>
